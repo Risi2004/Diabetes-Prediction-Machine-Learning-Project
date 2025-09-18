@@ -1,49 +1,46 @@
 # Diabetes-Prediction-Machine-Learning-Project
+# 🩺 Diabetes Prediction using Support Vector Machine (SVM)
 
-Project Overview
-This project aims to predict whether a person has diabetes or not using a machine learning model. The project is a classification problem solved using the Support Vector Machine (SVM) algorithm. The model is trained on a dataset of diagnostic measurements and has an accuracy score of 77.7% on the test data.
+A simple end-to-end machine learning project that predicts whether a person has diabetes (binary classification) using a Support Vector Machine (SVM).  
+The model is trained on diagnostic measurements and achieves **77.7% accuracy** on the test set.
 
-Dataset
-The dataset used is diabetes.csv, which contains various health metrics and an Outcome column indicating if a person is diabetic (1) or not (0). The columns are:
+---
 
-Pregnancies
+## 📁 Dataset
 
-Glucose
+- **File:** `diabetes.csv`  
+- **Target column:** `Outcome`  
+  - `1` = Diabetic  
+  - `0` = Non-diabetic  
+- **Feature columns:**
+  - Pregnancies  
+  - Glucose  
+  - BloodPressure  
+  - SkinThickness  
+  - Insulin  
+  - BMI  
+  - DiabetesPedigreeFunction  
+  - Age  
 
-BloodPressure
+---
 
-SkinThickness
+## 🧰 Tech Stack
 
-Insulin
+- **Language:** Python  
+- **Libraries:**  
+  - `pandas` – data manipulation  
+  - `numpy` – numerical operations  
+  - `scikit-learn` – ML algorithms & evaluation (`StandardScaler`, `train_test_split`, `svm`, `accuracy_score`)  
+- **Environment:** Jupyter Notebook  
 
-BMI
+---
 
-DiabetesPedigreeFunction
+## 🔄 Project Workflow
 
-Age
-
-Outcome
-
-Technology Stack
-Language: Python
-
-Libraries:
-
-pandas for data manipulation and analysis
-
-numpy for numerical operations
-
-scikit-learn for machine learning algorithms and model evaluation (specifically StandardScaler, train_test_split, svm, and accuracy_score)
-
-Environment: Jupyter Notebook
-
-Project Workflow
-Data Loading: The diabetes.csv dataset is loaded into a pandas DataFrame.
-
-Data Analysis: Initial analysis is performed to understand the dataset's structure and contents.
-
-Data Standardization: Features are standardized using StandardScaler to bring them to a common scale.
-
-Model Training: The data is split into training and testing sets, and an SVM classifier is trained on the training data.
-
-Model Evaluation: The model's performance is evaluated on both training and test data, with an accuracy score of 77.7% on the test data.
+1. **Data Loading** – Load `diabetes.csv` into a pandas DataFrame.  
+2. **Data Analysis** – Initial exploration (shape, NA values, summary).  
+3. **Data Standardization** – Scale features with `StandardScaler`.  
+4. **Train/Test Split** – 80/20 split with fixed random seed.  
+5. **Model Training** – Train SVM classifier.  
+6. **Evaluation** – Check accuracy on both training and test sets.  
+   - ✅ **Test Accuracy:** `77.7%`  
