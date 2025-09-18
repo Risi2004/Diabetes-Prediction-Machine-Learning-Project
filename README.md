@@ -1,5 +1,4 @@
 # Diabetes-Prediction-Machine-Learning-Project
-# 🩺 Diabetes Prediction using Support Vector Machine (SVM)
 
 A simple end-to-end machine learning project that predicts whether a person has diabetes (binary classification) using a Support Vector Machine (SVM).  
 The model is trained on diagnostic measurements and achieves **77.7% accuracy** on the test set.
